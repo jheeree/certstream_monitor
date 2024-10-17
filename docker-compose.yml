@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  certstream_monitor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: certstream_monitor
+    working_dir: /usr/src/app
+    volumes:
+      - ./CertStream_Monitor.py:/usr/src/app/CertStream_Monitor.py
+      - ./config.ini:/usr/src/app/config.ini
+      - ./stream_data.sqlite:/usr/src/app/stream_data.sqlite
+      - ./stream_data.log:/usr/src/app/stream_data.log
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python CertStream_Monitor.py
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
