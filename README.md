@@ -1,4 +1,3 @@
-# README.md
 <p align="center"><img src="img/head.png" alt="drawing" width="150"/>
 
 ---
