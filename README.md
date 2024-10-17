@@ -1,14 +1,13 @@
 # README.md
-
-![head.png](img/head.png)
+<p align="center"><img src="img/head.png" alt="drawing" width="150"/>
 
 ---
 
-# CertStream Monitor
+# • CertStream Monitor
 
 CertStream Monitor es una herramienta para monitorear y registrar eventos de CertStream ([calidog.io](https://calidog.io)), que proporciona información en tiempo real sobre cambios en los certificados TLS/SSL. Este proyecto utiliza `websockets` para conectarse al flujo de datos y registrar la información en un archivo de log.
 
-## Características
+## • Características
 
 - Conexión en tiempo real a CertStream
 - Filtrado de registros según dominios y conjunto de caracteres
@@ -16,22 +15,21 @@ CertStream Monitor es una herramienta para monitorear y registrar eventos de Cer
 - Envío de notificaciones a Slack, Microsoft Teams, Telegram, y Discord
 - Registro de eventos en un archivo `.log`
 
-## Capturas
+## • Capturas
 
-![image.png](img/image.png)
+<p align="center"><img src="img/image.png"/>
+<p align="center"><img src="img/a6a6d95a-2f62-4f22-b976-c2c0f58771d0.png"/>
 
-![image.png](img/a6a6d95a-2f62-4f22-b976-c2c0f58771d0.png)
-
-## Requisitos
+## • Requisitos
 
 Antes de ejecutar el proyecto, asegúrate de tener instalado lo siguiente:
 
 - Python 3.9 o superior
 - pip
 
-## Instalación
+## • Instalación
 
-### Uso Directo
+### • Uso Directo
 
 1. **Clona este repositorio**:
     
@@ -73,7 +71,7 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado lo siguiente:
     ```
     
 
-### Uso con Docker 🐳
+### • Uso con Docker 🐳
 
 1. **Asegúrate de tener Docker y Docker Compose instalados**.
 2. **Clona este repositorio** (si no lo has hecho ya):
@@ -83,7 +81,7 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado lo siguiente:
     cd CertStream_Monitor
     ```
     
-3. **Editar archivo de configuración `config.ini`** en el mismo directorio que el archivo `docker-compose.yml`:
+3. **Editar archivo de configuración `config.ini` en el mismo directorio que el archivo `docker-compose.yml`:**
     
     ```python
     [telegram]
@@ -115,6 +113,6 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado lo siguiente:
     Los archivos generados (`certstream_data.log` y `certstream_data.sqlite`) estarán en el mismo directorio donde se ejecutó el comando, debido a la configuración de volúmenes en `docker-compose.yml`.
     
 
-## Contribuciones
+## •Contribuciones
 
 Las contribuciones son bienvenidas! Si deseas mejorar este proyecto, no dudes en abrir un problema o enviar un pull request 😁
