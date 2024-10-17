@@ -34,7 +34,7 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado lo siguiente:
     
     ```bash
     git clone https://github.com/jheeree/certstream_monitor
-    cd CertStream_Monitor
+    cd certstream_monitor
     ```
     
 2. **Instala las dependencias:**
@@ -77,7 +77,7 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado lo siguiente:
     
     ```bash
     git clone https://github.com/jheeree/certstream_monitor
-    cd CertStream_Monitor
+    cd certstream_monitor
     ```
     
 3. **Editar archivo de configuración `config.ini` en el mismo directorio que el archivo `docker-compose.yml`:**
